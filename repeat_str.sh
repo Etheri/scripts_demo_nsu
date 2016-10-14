@@ -9,9 +9,8 @@ if [ -f $file_name ]; then
     exit 0
 fi
 
-for n in $(seq $3);
+for n in $(seq $count);
 do
     echo "$string" >> $file_name
     echo "$n"
 done
-
